@@ -1,0 +1,116 @@
+{
+  "global": {
+    "encoder_name": "ppmEncoder",
+    "renderer_name": "baseRenderer",
+    "output_file": "screenshots/cone.ppm",
+    "recursion_depth" : 3,
+    "background_color": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    }
+  },
+  "camera": {
+    "resolution": {
+      "width": 800,
+      "height": 800
+    },
+    "origin": {
+      "x": 0,
+      "y": 0.05,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "screen": {
+      "distance_with_camera": 1,
+      "width": 1,
+      "height": 1
+    }
+  },
+  "primitives": {
+    "cone": [
+      {
+        "crossing_point": {
+          "x": 0,
+          "y": 0,
+          "z": 3
+        },
+        "angle": 30,
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "rotation":{
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "reflection": 0,
+        "spec": 500,
+        "transparency": 0.0
+      },
+      {
+        "crossing_point": {
+          "x": 0,
+          "y": 0,
+          "z": 3
+        },
+        "angle": 30,
+        "color": {
+          "r": 255,
+          "g": 0,
+          "b": 0
+        },
+        "rotation":{
+          "x": 0,
+          "y": 0,
+          "z": 60
+        },
+        "reflection": 0,
+        "spec": 500,
+        "transparency": 0.0
+      },
+      {
+        "crossing_point": {
+          "x": 0,
+          "y": 0,
+          "z": 3
+        },
+        "angle": 30,
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 255
+        },
+        "rotation":{
+          "x": 0,
+          "y": 0,
+          "z": -60
+        },
+        "reflection": 0,
+        "spec": 500,
+        "transparency": 0.0
+      }
+    ]
+  },
+  "lights": {
+    "point": [
+      {
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "intensity": 0.8
+      }
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "global": {
+    "encoder_name": "ppmEncoder",
+    "renderer_name": "baseRenderer",
+    "output_file": "screenshots/box.ppm",
+    "recursion_depth": 3,
+    "scene" : "scenes/small.json",
+    "background_color": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    }
+  },
+  "camera": {
+    "resolution": {
+      "width": 800,
+      "height": 800
+    },
+    "origin": {
+      "x": 1,
+      "y": 2,
+      "z": -3
+    },
+    "rotation": {
+      "x": 45,
+      "y": -15,
+      "z": 0
+    },
+    "screen": {
+      "distance_with_camera": 1,
+      "width": 1,
+      "height": 1
+    }
+  },
+  "primitives": {
+    "plane": [
+      {
+        "normal": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "translation": -1.0,
+        "color": {
+          "r": 255,
+          "g": 0,
+          "b": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "reflection": 0,
+        "spec": 500,
+        "transparency": 0.0
+      },
+      {
+        "normal": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "translation": -1.0,
+        "color": {
+          "r": 0,
+          "g": 255,
+          "b": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "reflection": 0,
+        "spec": 1000,
+        "transparency": 0
+      },
+      {
+        "normal": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "translation": 1.0,
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "reflection": 0.3,
+        "spec": 500,
+        "transparency": 0.0
+      }
+    ],
+    "sphere": [
+      {
+        "center": {
+          "x": 1,
+          "y": 1,
+          "z": -1
+        },
+        "radius": 0.5,
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "reflection": 0,
+        "spec": 500,
+        "transparency": 0.0
+      }
+    ]
+  },
+  "lights": {
+    "ambient": [
+      {
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "intensity": 0.1
+      }
+    ],
+    "point": [
+      {
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "intensity": 0.6,
+        "x": 5,
+        "y": 5,
+        "z": -5
+      }
+    ]
+  }
+}
